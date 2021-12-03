@@ -6,8 +6,8 @@ Click run and it should be good!
 
 --RULES--
 
-1. Certain punctuation not included in letter count.
-    a. Symbols removed are ; : - " , . ? ! * { } [ ] < > + =
+1. Certain punctuation not included in letter count.\n
+    a. Symbols removed are ; : - " , . ? ! * { } [ ] < > + =\n
     b. Although many symbols can be used to format numbers, they are more commonly used at the end of words
         where they should not be counted.
     c. Slashes are rarely used with words and commonly used to format numbers. The example included them in the number,
