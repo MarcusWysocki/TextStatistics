@@ -6,7 +6,7 @@ Click run and it should be good!
 
 --RULES--
 
-1. Certain punctuation not included in letter count.
+1. Certain punctuation not included in letter count. <br />
     a. Symbols removed are ; : - " , . ? ! * { } [ ] < > + = <br />
     b. Although many symbols can be used to format numbers, they are more commonly used at the end of words
         where they should not be counted. <br />
