@@ -78,6 +78,11 @@ public class Main {
         }
     }
 
+    /**
+     *
+     * @param word The individual word read by the scanner.
+     * @return boolean to indicate it didn't crash.
+     */
     public static boolean letterCount(String word) {
 
         int length = shavePunctuation(word);
@@ -131,6 +136,11 @@ public class Main {
         return length;
     }
 
+    /**
+     *
+     * @param wordCounts The 45 index array that holds the count of all word lengths.
+     * @return an ArrayList of the most frequent lengths incase there are ties.
+     */
     public static ArrayList<Integer> getMaxLength(int[] wordCounts) {
         ArrayList<Integer> maxLength = new ArrayList<Integer>();
         int maxValue = 0;
