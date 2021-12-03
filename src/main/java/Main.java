@@ -15,9 +15,13 @@ public class Main {
      * The Index of the array is the word length. The value at the index is the word count.
      */
     static int[] counts = new int[45];
-    static int numWord = 0;
+    static int numWord = 0; //The total number of words discovered.
 
 
+    /**
+     *  Read line by line and then word by word using the default delimiter which is a space.
+     * @param args not used.
+     */
     public static void main(String args[]) {
         try {
             File myFile = new File(PATH);
@@ -74,7 +78,7 @@ public class Main {
     public static boolean letterCount(String word) {
 
         int length = shavePunctuation(word);
-        if (length != 0) {
+        if (length != 0 && length < 46) {
             //System.out.println(word + " " + length);
             counts[length - 1]++;
             numWord++;

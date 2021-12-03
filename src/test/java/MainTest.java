@@ -5,6 +5,11 @@ class MainTest {
 
     @Test
     void letterCount() {
+        Main main = new Main();
+
+        assertTrue(main.letterCount(""), "This should pass");
+        assertTrue(main.letterCount("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"), "This should pass");
+
     }
 
     @Test

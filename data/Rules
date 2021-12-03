@@ -1,6 +1,7 @@
-1. Punctuation not included if it is at the end of a word.
-2. Formatted numbers include no symbols in the middle of the numbers save for a couple.
-    a. Symbols removed are~ ; : - " , . ? ! * { } [ ] < > + =
-3. Words do not include hyphens.
-4. Quotations are not included.
+1. Certain punctuation not included in letter count.
+    a. Symbols removed are ; : - " , . ? ! * { } [ ] < > + =
+2. Formatted numbers include no symbols in the middle of the numbers save slashes.
+3. Hyphens are not included in letter count.
+4. Quotations are not included in letter count.
 5. Strings of characters that are neither letters nor numbers are excluded.
+6. Maximum word length is 45 as that is the longest word in the English language. Words that are greater are ignored.
