@@ -7,11 +7,11 @@ Click run and it should be good!
 --RULES--
 
 1. Certain punctuation not included in letter count.
-    a. Symbols removed are ; : - " , . ? ! * { } [ ] < > + =
+    a. Symbols removed are ; : - " , . ? ! * { } [ ] < > + = <br />
     b. Although many symbols can be used to format numbers, they are more commonly used at the end of words
-        where they should not be counted.
+        where they should not be counted. <br />
     c. Slashes are rarely used with words and commonly used to format numbers. The example included them in the number,
-        so they are included here.
+        so they are included here. <br />
 2. Formatted numbers include no symbols in the middle of the numbers save slashes.
 3. Hyphens are not included in letter count.
 4. Quotations are not included in letter count.
