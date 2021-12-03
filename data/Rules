@@ -1,0 +1,6 @@
+1. Punctuation not included if it is at the end of a word.
+2. Formatted numbers include no symbols in the middle of the numbers save for a couple.
+    a. Symbols removed are~ ; : - " , . ? ! * { } [ ] < > + =
+3. Words do not include hyphens.
+4. Quotations are not included.
+5. Strings of characters that are neither letters nor numbers are excluded.
