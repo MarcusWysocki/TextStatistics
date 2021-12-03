@@ -42,37 +42,39 @@ public class Main {
 
 
         System.out.println("Word count = " + numWord);
-
-        int totalLetters = 0;
-        for (int i = 0; i < counts.length; i++) {
-            if (counts[i] != 0) {
-                totalLetters += ((i+1) * counts[i]);
+        if (numWord != 0) {
+            int totalLetters = 0;
+            for (int i = 0; i < counts.length; i++) {
+                if (counts[i] != 0) {
+                    totalLetters += ((i + 1) * counts[i]);
+                }
             }
-        }
-        double average = (double) totalLetters/ (double)numWord;
-        System.out.println("Average word length = " + String.format("%,.3f", average));
+            double average = (double) totalLetters / (double) numWord;
+            System.out.println("Average word length = " + String.format("%,.3f", average));
 
-        for (int i = 0; i < counts.length; i++) {
-            if (counts[i] != 0) {
-                System.out.println("Number of words of length " + (i + 1) + " is " + counts[i]);
+            for (int i = 0; i < counts.length; i++) {
+                if (counts[i] != 0) {
+                    System.out.println("Number of words of length " + (i + 1) + " is " + counts[i]);
+                }
             }
-        }
 
-        List<Integer> maxLength = getMaxLength(counts);
+            List<Integer> maxLength = getMaxLength(counts);
 
-        String maxxes = " " + maxLength.get(0);
-        int mostFreqWord = counts[maxLength.get(0)-1];
+            String maxxes = " " + maxLength.get(0);
+            int mostFreqWord = counts[maxLength.get(0) - 1];
 
-        //Build string
-        if (maxLength.size() > 1) {
-            for (int i = 1; i < maxLength.size(); i++) {
-                maxxes = maxxes + " & " + maxLength.get(i);
+            //Build string
+            if (maxLength.size() > 1) {
+                for (int i = 1; i < maxLength.size(); i++) {
+                    maxxes = maxxes + " & " + maxLength.get(i);
+                }
             }
+
+            System.out.println("The most frequent occurrence of a word length is " + mostFreqWord
+                    + ", for word lengths of" + maxxes);
+        } else {
+            System.out.println("The file is empty");
         }
-
-        System.out.println("The most frequent occurrence of a word length is " + mostFreqWord
-                + ", for word lengths of" + maxxes);
-
     }
 
     public static boolean letterCount(String word) {
