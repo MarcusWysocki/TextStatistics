@@ -16,6 +16,7 @@ public class Main {
      */
     static int[] counts = new int[45];
     static int numWord = 0; //The total number of words discovered.
+    static ArrayList<Integer> maxLengthsList = new ArrayList<Integer>();
 
 
     /**
@@ -145,7 +146,7 @@ public class Main {
                 }
             }
         }
-
+        maxLengthsList = maxLength;
         return maxLength;
     }
 }
